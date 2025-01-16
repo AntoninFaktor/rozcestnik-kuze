@@ -362,5 +362,12 @@ export default function artisans_db ()
             tags: [],
             img: `./assets/img/leathery.jpg`,
         },
+        {
+            id:'dobag',
+            name:'DOBAG',
+            url:'https://www.dobag.cz',
+            tags: ['Zakázková výroba', 'Ruční šití'],
+            img: `./assets/img/dobag.jpg`,
+        },
     ]
 }       
