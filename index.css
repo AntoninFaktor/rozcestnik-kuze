@@ -395,7 +395,7 @@ i[class*="artisan-tag-"] {
     border-radius: 5px;
     margin-block: 47px;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 .artisan-detail h2 {

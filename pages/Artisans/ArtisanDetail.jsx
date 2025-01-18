@@ -46,7 +46,7 @@ export default function ArtisanDetail() {
             
             {artisan && (
                 <div className="artisan-detail">
-                    <img src={artisan.img} />
+                    <img src={`../assets/img/${artisan.img}`} />
                     {artisan.tags.map(tag=>(<i key={tag} className={`selected artisan-tag 
                     ${tag==="Ruční šití"?'hand-stitch':
                         tag==="Zakázková výroba"?'bespoke':

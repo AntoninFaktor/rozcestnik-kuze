@@ -58,7 +58,7 @@ const displayedArtisans = displaySearchFilter.filter(element => displayTagFilter
                 <div className="artisan-info">
                     <h3>{artisan.name}</h3>
                 </div>
-                <img src={artisan.img} />
+                <img src={`./assets/img/${artisan.img}`} />
                 {artisan.tags.map(tag =>
                     <i key={tag} className={`artisan-tag ${tag==="Ruční šití"?'hand-stitch':
                         tag==="Zakázková výroba"?'bespoke':
