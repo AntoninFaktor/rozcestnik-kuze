@@ -170,6 +170,8 @@ footer {
 /*** ABOUT PAGE ***/
 .about-hero-image {
     width: 100%;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .about-page-content {
@@ -273,9 +275,15 @@ footer {
 .artisan-tile {
     background-color: #d6b5883d;
     border-radius: 1em;
-    padding: 0 .4em;
-}
+    padding: .3em;
 
+}
+.artisan-tile-stitch {
+    border: #d6b588 dashed 2px;
+    border-radius: .9em;
+    padding: .3em;
+    height: 100%;
+}
 .artisan-tile a {
     color: #161616;
     text-decoration: none;
@@ -288,9 +296,11 @@ footer {
 
 .artisan-tile img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 1em;
     min-width: 240px;
     max-height: 320px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
 }
 
 .artisan-list-container button {
@@ -395,6 +405,7 @@ i[class*="artisan-tag-"] {
     border-radius: 5px;
     margin-block: 47px;
     max-width: 80%;
+    max-height: 500px;
     margin: 1em auto;
 }
 
@@ -406,11 +417,15 @@ i[class*="artisan-tag-"] {
 .artisan-detail > i {
     align-self: flex-start;
 }
+.artisan-detail-tags-container {
+    display: flex;
+}
 
 .artisan-detail .link-button {
-    background-color: #89d1d6;
+    background-color: #89d1d6a9;
     color: #111216;
     font-size: 1.125rem;
+    margin-top: 1em;
 }
 
 .not-found-container {

@@ -48,6 +48,7 @@ const displayedArtisans = displaySearchFilter.filter(element => displayTagFilter
 
     const artisanElements = displayedArtisans.map(artisan => (
         <div key={artisan.id} className="artisan-tile">
+            <div className=" artisan-tile-stitch">
             <Link
                 to={artisan.id}
                 state={{
@@ -63,12 +64,12 @@ const displayedArtisans = displaySearchFilter.filter(element => displayTagFilter
                     <i key={tag} className={`artisan-tag ${tag==="Ruční šití"?'hand-stitch':
                         tag==="Zakázková výroba"?'bespoke':
                         tag==="Historická výroba"?'historical':
-                        tag==="Ševci"?'shoes':
-                        tag==="s.r.o."?'sro':""
+                        tag==="Ševci"?'shoes':""
                         } selected`}>{tag}</i>
                     )
             }
             </Link>
+            </div>
         </div>
     ))
 
@@ -141,13 +142,6 @@ const displayedArtisans = displaySearchFilter.filter(element => displayTagFilter
                         ${tagFilter.includes( "Historická výroba") ? "selected" : ""}`
                     }
                 >Historická výroba</button>
-                                <button
-                    onClick={() => handleFilterChange("tag", "s.r.o.")}
-                    className={
-                        `artisan-tag sro 
-                        ${tagFilter.includes( "s.r.o.") ? "selected" : ""}`
-                    }
-                >s.r.o.</button>
 
                 {tagFilter ? (
                     <button

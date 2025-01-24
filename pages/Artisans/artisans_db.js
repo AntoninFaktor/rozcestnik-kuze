@@ -66,7 +66,7 @@ export default function artisans_db ()
             id: 'krojzl',
             name: 'Krojzl Zakázková výroba Shoemaker',
             url: 'https://www.krojzl.com',
-            tags: ['Ševci', 'Zakázková výroba'],
+            tags: ['Ševci', 'Zakázková výroba', 'Ruční šití'],
             img: `krojzl.jpg`,
         },    {
             id: 'aura_original',
@@ -140,7 +140,7 @@ export default function artisans_db ()
             id: 'km_saddlary',
             name: 'K.M. Saddlary',
             url: 'https://www.kmsaddlery.cz',
-            tags: ['s.r.o.'],
+            tags: [],
             img: `km_saddlary.jpg`,
         },
         {
@@ -167,7 +167,7 @@ export default function artisans_db ()
             id: 'tore',
             name: 'TORE',
             url: 'https://www.toreshop.cz',
-            tags: ['s.r.o.'],
+            tags: [],
             img: `tore.jpg`,
         },    {
             id: 'roman_tlusty_kozene_vyrobky',
@@ -180,7 +180,7 @@ export default function artisans_db ()
             id: 'calvis_office',
             name: 'Calvis Office',
             url: 'https://www.clavisoffice.cz',
-            tags: ['Ruční šití', 'Zakázková výroba', 's.r.o.'],
+            tags: ['Ruční šití', 'Zakázková výroba', ],
             img: `calvis_office.jpg`,
         },
         {
@@ -207,7 +207,7 @@ export default function artisans_db ()
             id: 'kozedelnik_jan_planicka',
             name: 'KOŽEDĚLNÍK JAN PLANIČKA',
             url: 'https://www.kozedelnik.cz/',
-            tags: ['s.r.o.'],
+            tags: [],
             img: `kozedelnik_jan_planicka.jpg`,
         },    {
             id: 'jerva',
@@ -247,7 +247,7 @@ export default function artisans_db ()
             id: 'facebag',
             name: 'Facebag',
             url: 'https://www.facebag.cz',
-            tags: ['s.r.o.'],
+            tags: [],
             img: `facebag.jpg`,
         },
             {
@@ -380,15 +380,22 @@ export default function artisans_db ()
             id:'pbg',
             name:'PBG',
             url:'https://www.pbgstudio.com',
-            tags: ['s.r.o.'],
+            tags: [],
             img: `pbg.jpg`,
         },
         {
             id:'vasky',
             name:'Vasky',
-            url:'https://www.pbgstudio.com',
-            tags: ['s.r.o.', 'Ševci'],
+            url:'https://www.vasky.cz/',
+            tags: ['Ševci'],
             img: `vasky.jpg`,
+        },
+        {
+            id:'fernando_echeverria',
+            name:'Fernando Echeverria',
+            url:'https://www.pbgstudio.com',
+            tags: [],
+            img: `fernando_echeverria.jpg`,
         },
     ]
 }       

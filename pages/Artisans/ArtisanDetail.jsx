@@ -46,17 +46,18 @@ export default function ArtisanDetail() {
             
             {artisan && (
                 <div className="artisan-detail">
+                    <a href={artisan.url} target="_blank" className="link-button">Navštívit web</a>
                     <img src={`../assets/img/${artisan.img}`} />
-                    {artisan.tags.map(tag=>(<i key={tag} className={`selected artisan-tag 
+                    <div class="artisan-detail-tags-container">{artisan.tags.map(tag=>(<i key={tag} className={`selected artisan-tag 
                     ${tag==="Ruční šití"?'hand-stitch':
                         tag==="Zakázková výroba"?'bespoke':
                         tag==="Historická výroba"?'historical':
-                        tag==="Ševci"?'shoes':
-                        tag==="s.r.o."?'sro':""
+                        tag==="Ševci"?'shoes':""
                         }`} >{tag}</i>))}
+                        </div>
                     <h2>{artisan.name}</h2>
                     <p>{artisan.description}</p>
-                    <a href={artisan.url} target="_blank" className="link-button">Navštívit web</a>
+
                 </div>
             )}
         </div>
