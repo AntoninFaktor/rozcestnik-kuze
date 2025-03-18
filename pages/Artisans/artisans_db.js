@@ -397,5 +397,12 @@ export default function artisans_db ()
             tags: [],
             img: `fernando_echeverria.jpg`,
         },
+        {
+            id:'zakovsky',
+            name:'Zakovsky',
+            url:'https://www.zakovsky.eu',
+            tags: ['Zakázková výroba', 'Ruční šití'],
+            img: `zakovsky.jpg`,
+        },
     ]
 }       
